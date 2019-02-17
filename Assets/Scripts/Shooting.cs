@@ -19,7 +19,8 @@ public class Shooting : MonoBehaviour
             if (Input.GetMouseButtonDown(0))
             {
                 var clone = Instantiate(theBullet, new Vector3(transform.position.x, transform.position.y + 1.5f, transform.position.z + 0.5f), transform.rotation);
-                clone.velocity = transform.TransformDirection(new Vector3(0, 0, Speed));
+                //clone.velocity = transform.TransformDirection(new Vector3(0, 0, Speed));
+                clone.AddForce(transform.forward * 500);
                 Destroy(clone.gameObject, 3);
             }
         }

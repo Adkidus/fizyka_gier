@@ -5,11 +5,10 @@ using UnityEngine;
 public class Elevator : MonoBehaviour
 {
     public GameObject moveplatform;
+    public Collider player;
 
     float maxY = 7.84f;
     float minY = 0.36f;
-
-    public Collider player;
 
     bool stay;
 
@@ -32,7 +31,7 @@ public class Elevator : MonoBehaviour
         if (other.tag != "Player")
             return;
 
-            stay = true;
+        stay = true;
         player = other;
     }
 

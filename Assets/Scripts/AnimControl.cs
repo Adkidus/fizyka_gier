@@ -67,7 +67,7 @@ public class AnimControl :  MonoBehaviour
         if (other.gameObject.CompareTag("Ground"))
             onGround = true;
 
-        if (other.gameObject.tag == "Enemy")
+        if (other.gameObject.tag == "Death")
             Ragdol();
     }
 

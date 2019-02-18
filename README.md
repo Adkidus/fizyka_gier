@@ -1,1 +1,2 @@
-# fizyka_gier
+Projekt Fizyka Gier
+Adrian Ciepły
